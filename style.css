@@ -1,0 +1,103 @@
+body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    .bg-pattern {
+      background-image: url("images/hero-bg.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    /* ================= ANIMATIONS ================= */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(32px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .animate-fade-up {
+      opacity: 0;
+      animation: fadeUp 0.9s cubic-bezier(0.16,1,0.3,1) forwards;
+    }
+
+    .delay-1 { animation-delay: .2s }
+    .delay-2 { animation-delay: .4s }
+    .delay-3 { animation-delay: .6s }
+    .delay-4 { animation-delay: .8s }
+
+
+    .animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px) scale(0.95);
+  transition: all 0.6s ease-out;
+}
+
+.animate-on-scroll.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+    .hamburger-line {
+      width: 24px;
+      height: 2px;
+      background: currentColor;
+      transition: all .3s ease;
+      color: #2563EB !important; /* Tailwind Blue-600 */
+    }
+
+    .menu-open .hamburger-line:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .menu-open .hamburger-line:nth-child(2) {
+      opacity: 0;
+    }
+
+    .menu-open .hamburger-line:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    /* ================= MOBILE MENU ================= */
+    @keyframes menuFade {
+      from { opacity: 0; transform: scale(1.03); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    #mobile-menu {
+      animation: menuFade .35s cubic-bezier(0.16,1,0.3,1);
+    }
+    
+  .reveal,
+  .reveal-left,
+  .reveal-right,
+  .reveal-stagger {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+  }
+
+  .reveal-left { transform: translateX(-30px); }
+  .reveal-right { transform: translateX(30px); }
+
+  .show {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+
+  .value-card {
+    transition-delay: var(--delay);
+  }
+  .animate-icon-in {
+    animation: iconPop 0.6s ease forwards;
+  }
+
+  @keyframes iconPop {
+    0% {
+      opacity: 0;
+      transform: scale(0.5) rotate(-10deg);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1) rotate(0);
+    }
+  }

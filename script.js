@@ -126,3 +126,16 @@ const scrolledLogo = "images/logo1.png";
       icon.textContent = content.classList.contains("hidden") ? "+" : "–";
     });
   });
+
+  function switchTab(tab) {
+  document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+  document.getElementById(tab).classList.remove('hidden');
+
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.classList.remove('bg-indigo-600', 'text-white');
+    btn.classList.add('bg-white', 'text-gray-600', 'border');
+  });
+
+  document.getElementById('tab-' + tab)
+    .classList.add('bg-indigo-600', 'text-white');
+}

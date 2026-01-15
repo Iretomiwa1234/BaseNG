@@ -147,120 +147,188 @@
   </div>
 </section>
 
-<section class="py-24">
+<section class="py-24" style="background-color: var(--baseng-soft);">
   <div class="max-w-5xl mx-auto px-6">
 
-    <!-- ================= TAB NAVIGATION ================= -->
-    <div class="flex justify-center gap-3 mb-12">
-      <button onclick="switchTab('pitch')" id="tab-pitch"
-        class="tab-btn bg-indigo-600 text-white px-5 py-2.5 rounded-lg flex items-center gap-2 text-sm font-medium shadow">
-        <i class="bi bi-send"></i> Submit a Pitch
-      </button>
+    <!-- ================= TABS NAV ================= -->
+     <div class="flex flex-wrap justify-center gap-3 mb-14">
+  <button class="tab-btn px-6 py-3 rounded-xl text-sm font-medium flex items-center gap-2 text-white shadow"
+          data-tab="pitch">
+    <i class="bi bi-send"></i> Submit a Pitch
+  </button>
 
-      <button onclick="switchTab('location')" id="tab-location"
-        class="tab-btn bg-white border px-5 py-2.5 rounded-lg flex items-center gap-2 text-sm font-medium text-gray-600 hover:bg-gray-100">
-        <i class="bi bi-geo-alt"></i> Visit Us
-      </button>
+  <button class="tab-btn px-6 py-3 rounded-xl text-sm font-medium flex items-center gap-2 border"
+          data-tab="location">
+    <i class="bi bi-geo-alt"></i> Visit Us
+  </button>
 
-      <button onclick="switchTab('mail')" id="tab-mail"
-        class="tab-btn bg-white border px-5 py-2.5 rounded-lg flex items-center gap-2 text-sm font-medium text-gray-600 hover:bg-gray-100">
-        <i class="bi bi-envelope"></i> Contact
-      </button>
-    </div>
+  <button class="tab-btn px-6 py-3 rounded-xl text-sm font-medium flex items-center gap-2 border"
+          data-tab="mail">
+    <i class="bi bi-envelope"></i> Contact
+  </button>
+</div>
 
     <!-- ================= TAB CONTENT ================= -->
     <div class="max-w-3xl mx-auto">
 
-      <!-- ===== SUBMIT PITCH ===== -->
-      <div id="pitch" class="tab-content bg-white border rounded-xl p-8 space-y-6 shadow-sm">
-        <h2 class="text-2xl font-bold">Submit Your Pitch</h2>
+      <!-- ================= SUBMIT PITCH ================= -->
+      <div id="pitch" class="tab-content bg-white border rounded-2xl p-8 md:p-10 shadow-sm space-y-8">
 
-        <form class="space-y-5">
+        <div>
+          <h2 class="text-2xl font-bold mb-2" style="color: var(--baseng-dark);">
+            Submit Your Pitch
+          </h2>
+          <p style="color: var(--baseng-muted);">
+            Tell us about your startup and vision. We review all submissions carefully.
+          </p>
+        </div>
+
+        <form class="space-y-6">
+
           <div class="grid md:grid-cols-2 gap-5">
-            <input class="border p-3 rounded w-full focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Founder Name *">
-            <input class="border p-3 rounded w-full focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Company Name *">
+            <input class="form-input" placeholder="Founder Name *">
+            <input class="form-input" placeholder="Company Name *">
           </div>
 
           <div class="grid md:grid-cols-2 gap-5">
-            <input class="border p-3 rounded w-full focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Email Address *">
-            <input class="border p-3 rounded w-full focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Phone Number">
+            <input class="form-input" placeholder="Email Address *">
+            <input class="form-input" placeholder="Phone Number">
           </div>
 
-          <textarea
-            class="border p-3 rounded w-full min-h-[120px] focus:outline-none focus:ring-2 focus:ring-indigo-500"
-            placeholder="About your startup *"></textarea>
+          <div class="grid md:grid-cols-2 gap-5">
+            <input class="form-input" placeholder="Sector *">
+            <input class="form-input" placeholder="Stage *">
+          </div>
+
+          <input class="form-input" placeholder="Company Website">
+
+          <textarea class="form-textarea" placeholder="Describe your startup, product, traction and team *"></textarea>
+
+          <input class="form-input" placeholder="Pitch Deck URL">
 
           <button
-            class="w-full bg-indigo-600 hover:bg-indigo-700 transition text-white py-3 rounded-lg flex items-center justify-center gap-2">
+            class="w-full py-3 rounded-xl font-medium text-white flex items-center justify-center gap-2"
+            style="background-color: var(--baseng-primary);">
             Submit Pitch <i class="bi bi-arrow-right"></i>
           </button>
         </form>
       </div>
 
-      <!-- ===== LOCATION ===== -->
-      <div id="location" class="tab-content hidden space-y-6">
+      <!-- ================= LOCATION ================= -->
+      <div id="location" class="tab-content hidden space-y-10">
 
-        <div class="bg-white border rounded-xl p-8 grid md:grid-cols-2 gap-8 shadow-sm">
+        <!-- Office Info -->
+        <div class="bg-white border rounded-2xl p-8 md:p-10 grid md:grid-cols-2 gap-8 shadow-sm">
+
           <div class="space-y-6">
 
             <div class="flex gap-4">
-              <i class="bi bi-building text-indigo-600 text-2xl"></i>
+              <div class="icon-box">
+                <i class="bi bi-building"></i>
+              </div>
               <div>
-                <h4 class="font-semibold">Address</h4>
-                <p class="text-sm text-gray-600">
-                  BaseNG Ventures<br>Victoria Island<br>Lagos, Nigeria
+                <h4 class="font-semibold mb-1" style="color: var(--baseng-dark);">Address</h4>
+                <p class="text-sm" style="color: var(--baseng-muted);">
+                  BaseNG Ventures<br>
+                  Victoria Island<br>
+                  Lagos, Nigeria
                 </p>
               </div>
             </div>
 
             <div class="flex gap-4">
-              <i class="bi bi-clock text-indigo-600 text-2xl"></i>
+              <div class="icon-box">
+                <i class="bi bi-clock"></i>
+              </div>
               <div>
-                <h4 class="font-semibold">Office Hours</h4>
-                <p class="text-sm text-gray-600">
-                  Mon – Fri: 9AM – 6PM
+                <h4 class="font-semibold mb-1" style="color: var(--baseng-dark);">Office Hours</h4>
+                <p class="text-sm" style="color: var(--baseng-muted);">
+                  Mon – Fri: 9:00 AM – 6:00 PM
                 </p>
               </div>
             </div>
 
             <div class="flex gap-4">
-              <i class="bi bi-telephone text-indigo-600 text-2xl"></i>
+              <div class="icon-box">
+                <i class="bi bi-telephone"></i>
+              </div>
               <div>
-                <h4 class="font-semibold">Contact</h4>
-                <p class="text-sm text-gray-600">
-                  +234 800 BASE NG<br>hello@baseng.com
+                <h4 class="font-semibold mb-1" style="color: var(--baseng-dark);">Contact</h4>
+                <p class="text-sm" style="color: var(--baseng-muted);">
+                  08029407494, 08034167723<br>
+                  pitch@baseng.com
                 </p>
               </div>
             </div>
 
           </div>
 
-          <iframe
-            class="w-full h-56 rounded-lg border"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!2d3.4196!3d6.4281"
-            loading="lazy">
-          </iframe>
+          <div class="bg-gray-100 rounded-lg overflow-hidden h-56 md:h-auto">
+  <iframe
+    class="w-full h-full min-h-[224px] border-0"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.7286354706444!2d3.4196!3d6.4281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMjUnNDEuMiJOIDPCsDI1JzEwLjYiRQ!5e0!3m2!1sen!2sng!4v1234567890"
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    allowfullscreen
+    title="BaseNG Office Location">
+  </iframe>
+</div>
+
+
+        </div>
+
+        <!-- Request Visit -->
+        <div class="bg-white border rounded-2xl p-8 md:p-10 shadow-sm">
+          <h3 class="text-lg font-semibold mb-6" style="color: var(--baseng-dark);">
+            Request a Visit
+          </h3>
+
+          <form class="space-y-6">
+            <div class="grid md:grid-cols-2 gap-5">
+              <input class="form-input" placeholder="Your Name *">
+              <input class="form-input" placeholder="Email Address *">
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-5">
+              <input type="date" class="form-input">
+              <input class="form-input" placeholder="Purpose of Visit *">
+            </div>
+
+            <button
+              class="px-6 py-3 rounded-xl text-white font-medium"
+              style="background-color: var(--baseng-primary);">
+              Request Visit
+            </button>
+          </form>
         </div>
       </div>
 
-      <!-- ===== CONTACT ===== -->
-      <div id="mail" class="tab-content hidden bg-white border rounded-xl p-8 space-y-6 shadow-sm">
-        <h2 class="text-2xl font-bold">Get in Touch</h2>
+      <!-- ================= CONTACT ================= -->
+      <div id="mail" class="tab-content hidden bg-white border rounded-2xl p-8 md:p-10 shadow-sm space-y-8">
 
-        <form class="space-y-5">
+        <div>
+          <h2 class="text-2xl font-bold mb-2" style="color: var(--baseng-dark);">
+            Get in Touch
+          </h2>
+          <p style="color: var(--baseng-muted);">
+            Have a question or inquiry? Send us a message and we’ll respond promptly.
+          </p>
+        </div>
+
+        <form class="space-y-6">
+
           <div class="grid md:grid-cols-2 gap-5">
-            <input class="border p-3 rounded w-full focus:ring-2 focus:ring-indigo-500" placeholder="Your Name *">
-            <input class="border p-3 rounded w-full focus:ring-2 focus:ring-indigo-500" placeholder="Email *">
+            <input class="form-input" placeholder="Your Name *">
+            <input class="form-input" placeholder="Email Address *">
           </div>
 
-          <input class="border p-3 rounded w-full focus:ring-2 focus:ring-indigo-500" placeholder="Subject *">
+          <input class="form-input" placeholder="Subject *">
 
-          <textarea
-            class="border p-3 rounded w-full min-h-[150px] focus:ring-2 focus:ring-indigo-500"
-            placeholder="Message *"></textarea>
+          <textarea class="form-textarea" placeholder="Write your message here *"></textarea>
 
           <button
-            class="w-full bg-indigo-600 hover:bg-indigo-700 transition text-white py-3 rounded-lg flex items-center justify-center gap-2">
+            class="w-full py-3 rounded-xl font-medium text-white flex items-center justify-center gap-2"
+            style="background-color: var(--baseng-primary);">
             Send Message <i class="bi bi-send"></i>
           </button>
         </form>
@@ -269,6 +337,7 @@
     </div>
   </div>
 </section>
+
 
 <section id="focus" class="bg-[#f6fbfe] py-20 overflow-hidden">
   <div class="max-w-6xl mx-auto px-6">

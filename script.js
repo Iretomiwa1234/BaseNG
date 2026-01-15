@@ -127,15 +127,32 @@ const scrolledLogo = "images/logo1.png";
     });
   });
 
-  function switchTab(tab) {
-  document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
-  document.getElementById(tab).classList.remove('hidden');
+document.addEventListener("DOMContentLoaded", () => {
+    const tabs = document.querySelectorAll(".tab-btn");
+    const contents = document.querySelectorAll(".tab-content");
 
-  document.querySelectorAll('.tab-btn').forEach(btn => {
-    btn.classList.remove('bg-indigo-600', 'text-white');
-    btn.classList.add('bg-white', 'text-gray-600', 'border');
+    tabs.forEach(tab => {
+      // Store target tab from data-tab
+      const target = tab.dataset.tab;
+
+      tab.addEventListener("click", () => {
+        // Hide all tab contents
+        contents.forEach(c => c.classList.add("hidden"));
+
+        // Show the selected tab
+        document.getElementById(target).classList.remove("hidden");
+
+        // Reset all tab buttons styles
+        tabs.forEach(b => {
+          b.style.backgroundColor = "white";
+          b.style.color = "var(--baseng-muted)";
+          b.classList.remove("shadow");
+        });
+
+        // Style the active tab
+        tab.style.backgroundColor = "var(--baseng-primary)";
+        tab.style.color = "white";
+        tab.classList.add("shadow");
+      });
+    });
   });
-
-  document.getElementById('tab-' + tab)
-    .classList.add('bg-indigo-600', 'text-white');
-}

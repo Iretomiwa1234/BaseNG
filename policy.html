@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>BaseNG - Legal Page</title>
+
+    <!-- SEO Meta -->
+    <meta name="description" content="BaseNG is a global technology investment and venture-building company focused on scaling high-growth startups across telecoms, fintech, gaming, and digital innovation.">
+    <meta name="keywords" content="BaseNG, technology investment, venture capital, fintech, telecommunications, startups, innovation">
+    <meta name="author" content="BaseNG">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="BaseNG - Technologies">
+    <meta property="og:description" content="Empowering innovative technology startups with capital, expertise, and strategic partnerships.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://baseng.com">
+    <meta property="og:image" content="images/og-image.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="BaseNG - Technologies">
+    <meta name="twitter:description" content="A global technology investment and venture-building company.">
+    <meta name="twitter:image" content="images/og-image.png">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+
+      <!-- Fonts -->
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+      <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+      />
+
+      <link rel="stylesheet" href="style.css">
+
+      <!-- Tailwind -->
+      <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen bg-[var(--baseng-soft)] text-[var(--baseng-dark)]">
+
+<header
+  id="site-header"
+  class="fixed top-0 left-0 w-full z-40 transition-all duration-300 bg-transparent py-3">
+  <div class="max-w-6xl mx-auto px-6 flex items-center justify-between">
+
+    <!-- Logo -->
+    <a href="index.html">
+      <img 
+        id=""
+        src="images/logo1.png"
+        alt="BaseNG"
+        class="h-9 transition-all duration-300"
+      >
+    </a>
+
+
+    <!-- Desktop Nav -->
+    <nav
+      id="site-nav"
+      class="hidden md:flex gap-12 text-sm font-medium text-slate/80 transition-colors duration-300"
+    >
+      <a href="about.html" class="hover:text-blue-600">About</a>
+      <a href="index.html#focus" class="hover:text-blue-600">Focus Areas</a>
+      <a href="index.html#approach" class="hover:text-blue-600">Our Approach</a>
+      <a href="index.html#values" class="hover:text-blue-600">Values</a>
+    </nav>
+
+    <!-- Desktop CTA -->
+    <a
+      href="partnership.html"
+      class="hidden md:inline-flex px-5 py-2 rounded-xl  bg-blue-600 text-white font-semibold transition-all duration-300"
+    >
+      Partner With Us
+    </a>
+
+    <!-- Mobile Button -->
+    <button
+      id="menu-btn"
+      class="md:hidden flex flex-col gap-1.5 z-50"
+      aria-label="Toggle Menu"
+    >
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+  </div>
+</header>
+
+<!-- ================= MOBILE MENU ================= -->
+<div
+  id="mobile-menu"
+  class="fixed inset-0 bg-white text-slate-700 hidden flex flex-col justify-center gap-8 text-xl font-medium z-30 px-12"
+>
+
+  <!-- Close Button -->
+  <button
+    id="close-menu-btn"
+    aria-label="Close menu"
+    class="absolute top-6 right-6 text-3xl font-light text-blue-700 hover:text-blue-600 transition"
+  >
+    &times;
+  </button>
+
+  <a href="about.html" class="hover:text-blue-600">About</a>
+  <a href="index.html#focus" class="hover:text-blue-600">Focus Areas</a>
+  <a href="index.html#approach" class="hover:text-blue-600">Our Approach</a>
+  <a href="index.html#values" class="hover:text-blue-600">Values</a>
+
+  <a
+    href="partnership.html"
+    class="mt-6 px-8 py-4 rounded-xl bg-blue-600 text-white text-lg"
+  >
+    Partner With Us
+  </a>
+</div>
+
+  <!-- Main Content -->
+<main class="pt-32 pb-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Page Intro -->
+      <div class="animate-fade-in">
+        <h1 class="text-4xl md:text-5xl font-bold mb-8">
+          Privacy Policy
+        </h1>
+
+        <p class="text-lg text-[var(--baseng-muted)] mb-12">
+          At BaseNG, we take your privacy seriously. This Privacy Policy explains how we collect,
+          use, disclose, and safeguard your information when you visit our website, apply for
+          funding, or engage with our services.
+        </p>
+
+        <!-- Sections -->
+        <div class="space-y-10">
+
+          <!-- Section 1 -->
+          <section>
+            <h2 class="text-2xl font-semibold mb-4">
+              1. Information We Collect
+            </h2>
+            <p class="text-[var(--baseng-muted)] mb-4">
+              We collect personal information that you voluntarily provide to us. This includes:
+            </p>
+            <ul class="list-disc list-inside space-y-2 text-[var(--baseng-muted)] ml-4">
+              <li>
+                <strong class="text-[var(--baseng-dark)]">Founder & Application Data:</strong>
+                Name, email address, phone number, professional history, and any pitch decks or
+                financial documents submitted during the funding application process.
+              </li>
+              <li>
+                <strong class="text-[var(--baseng-dark)]">Communication Data:</strong>
+                Information provided when you contact us for inquiries, support, or event
+                registration.
+              </li>
+              <li>
+                <strong class="text-[var(--baseng-dark)]">Usage Data:</strong>
+                IP address, browser type, cookies, and similar technical data.
+              </li>
+            </ul>
+          </section>
+
+          <!-- Section 2 -->
+          <section>
+            <h2 class="text-2xl font-semibold mb-4">
+              2. How We Use Your Information
+            </h2>
+            <p class="text-[var(--baseng-muted)] mb-4">
+              BaseNG uses the collected data for the following purposes:
+            </p>
+            <ul class="list-disc list-inside space-y-2 text-[var(--baseng-muted)] ml-4">
+              <li><strong class="text-[var(--baseng-dark)]">Investment Evaluation:</strong> Reviewing funding applications and due diligence.</li>
+              <li><strong class="text-[var(--baseng-dark)]">Communication:</strong> Updates, newsletters, and event invitations.</li>
+              <li><strong class="text-[var(--baseng-dark)]">Operations:</strong> Relationship management and internal process improvement.</li>
+              <li><strong class="text-[var(--baseng-dark)]">Legal Compliance:</strong> Regulatory and AML requirements.</li>
+            </ul>
+          </section>
+
+          <!-- Section 3 -->
+          <section>
+            <h2 class="text-2xl font-semibold mb-4">
+              3. Data Sharing and Disclosure
+            </h2>
+            <p class="text-[var(--baseng-muted)] mb-4">
+              We do not sell or rent your personal information. We may share data only when necessary:
+            </p>
+            <ul class="list-disc list-inside space-y-2 text-[var(--baseng-muted)] ml-4">
+              <li><strong class="text-[var(--baseng-dark)]">Service Providers:</strong> Cloud, CRM, or legal partners.</li>
+              <li><strong class="text-[var(--baseng-dark)]">Co-Investors:</strong> Only with explicit consent.</li>
+              <li><strong class="text-[var(--baseng-dark)]">Legal Requirements:</strong> Court orders or lawful requests.</li>
+            </ul>
+          </section>
+
+          <!-- Section 4 -->
+          <section>
+            <h2 class="text-2xl font-semibold mb-4">
+              4. Data Security
+            </h2>
+            <p class="text-[var(--baseng-muted)] mb-4">
+              We apply strong safeguards to protect your data:
+            </p>
+            <ul class="list-disc list-inside space-y-2 text-[var(--baseng-muted)] ml-4">
+              <li><strong class="text-[var(--baseng-dark)]">Encryption:</strong> Industry-standard encryption.</li>
+              <li><strong class="text-[var(--baseng-dark)]">Access Control:</strong> Limited internal access.</li>
+            </ul>
+          </section>
+
+          <!-- Section 5 -->
+          <section>
+            <h2 class="text-2xl font-semibold mb-4">
+              5. Your Rights
+            </h2>
+            <p class="text-[var(--baseng-muted)] mb-4">
+              Depending on your location, you may have rights including:
+            </p>
+            <ul class="list-disc list-inside space-y-2 text-[var(--baseng-muted)] ml-4">
+              <li><strong class="text-[var(--baseng-dark)]">Access & Correction</strong></li>
+              <li><strong class="text-[var(--baseng-dark)]">Deletion</strong></li>
+              <li><strong class="text-[var(--baseng-dark)]">Withdrawal of Consent</strong></li>
+            </ul>
+          </section>
+
+          <!-- Section 6 -->
+          <section>
+            <h2 class="text-2xl font-semibold mb-4">
+              6. Changes to This Policy
+            </h2>
+            <p class="text-[var(--baseng-muted)]">
+              We may update this Privacy Policy periodically. Updates will be posted on this page.
+            </p>
+          </section>
+
+          <!-- Section 7 -->
+          <section>
+            <h2 class="text-2xl font-semibold mb-4">
+              7. Contact Us
+            </h2>
+            <p class="text-[var(--baseng-muted)] mb-4">
+              For questions or data requests, contact us:
+            </p>
+
+            <div class="bg-white border rounded-lg p-6">
+              <p class="font-semibold mb-2">BaseNG Technology</p>
+              <p class="text-[var(--baseng-muted)]">Email: info@basengtech.com</p>
+              <p class="text-[var(--baseng-muted)]">Website: www.basengtech.com</p>
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+ <footer class="bg-[#2563EB] text-white">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
+
+      <!-- Brand -->
+      <div class="lg:col-span-2">
+        <a
+          href="/"
+          class="transition-transform hover:scale-[1.02]"
+        >
+          <img
+            src="images/logo2.png"
+            alt="BaseNG"
+            class="h-9 w-auto brightness-0 invert mb-4"
+          />
+        </a>
+
+        <p class="text-white/70 max-w-sm mb-6">
+          A global technology investment and venture-building platform empowering
+          visionary founders to build sustainable, high-growth companies.
+        </p>
+
+        <div class="flex items-center gap-4">
+          <a
+            href="#"
+            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-blue-500 transition-colors"
+          >
+            <i class="bi bi-linkedin text-lg"></i>
+          </a>
+
+          <a
+            href="#"
+            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-blue-500 transition-colors"
+          >
+            <i class="bi bi-twitter-x text-lg"></i>
+          </a>
+          <a
+            href="#"
+            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-blue-500 transition-colors"
+          >
+            <i class="bi bi-instagram text-lg"></i>
+          </a>
+
+        </div>
+      </div>
+
+      <!-- Company Links -->
+      <div>
+        <h4 class="font-semibold text-lg mb-4">Company</h4>
+        <ul class="space-y-3">
+          <li>
+            <a href="index.html#about" class="text-white/70 hover:text-blue-400 transition-colors">
+              About
+            </a>
+          </li>
+          <li>
+            <a href="index.html#focus" class="text-white/70 hover:text-blue-400 transition-colors">
+              Focus Areas
+            </a>
+          </li>
+          <li>
+            <a href="index.html#approach" class="text-white/70 hover:text-blue-400 transition-colors">
+              Our Approach
+            </a>
+          </li>
+          <li>
+            <a href="index.html#values" class="text-white/70 hover:text-blue-400 transition-colors">
+              Values
+            </a>
+          </li>
+          <li>
+            <a href="policy.html" class="text-white/70 hover:text-blue-400 transition-colors">
+              Privacy & Policy
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Resources Links -->
+      <div>
+        <h4 class="font-semibold text-lg mb-4">Resources</h4>
+        <ul class="space-y-3">
+          <li>
+            <a href="partnership.html?pitch" class="text-white/70 hover:text-blue-400 transition-colors">
+              Submit Pitch
+            </a>
+          </li>
+          <li>
+            <a href="partnership.html?tab=mail" class="text-white/70 hover:text-blue-400 transition-colors">
+              Send Mail
+            </a>
+          </li>
+          <li>
+            <a href="partnership.html?tab=location" class="text-white/70 hover:text-blue-400 transition-colors">
+              Visit Our Office
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Bottom Bar -->
+    <!-- Bottom Bar -->
+    <div
+      class="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4"
+    >
+      <p class="text-white/50 text-sm">
+        © 2026 BaseNG Holdings. All rights reserved.
+      </p>
+
+      <div class="flex items-center gap-6 text-sm text-white/50">
+        <a href="policy.html" class="hover:text-blue-400 transition-colors">
+          Privacy Policy
+        </a>
+        <a href="legal.html" class="hover:text-blue-400 transition-colors">
+          Terms of Service
+        </a>
+      </div>
+    </div>
+
+
+  </div>
+</footer>
+<script src="script.js"></script>
+
+</body>
+</html>

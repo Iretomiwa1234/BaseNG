@@ -152,11 +152,6 @@
 
     <!-- ================= TABS NAV ================= -->
      <div class="flex flex-wrap justify-center gap-3 mb-14">
-  <button class="tab-btn px-6 py-3 rounded-xl text-sm font-medium flex items-center gap-2 text-white shadow"
-          data-tab="pitch">
-    <i class="bi bi-send"></i> Submit a Pitch
-  </button>
-
   <button class="tab-btn px-6 py-3 rounded-xl text-sm font-medium flex items-center gap-2 border"
           data-tab="location">
     <i class="bi bi-geo-alt"></i> Visit Us
@@ -169,50 +164,7 @@
 </div>
 
     <!-- ================= TAB CONTENT ================= -->
-    <div class="max-w-3xl mx-auto">
-
-      <!-- ================= SUBMIT PITCH ================= -->
-      <div id="pitch" class="tab-content bg-white border rounded-2xl p-8 md:p-10 shadow-sm space-y-8">
-
-        <div>
-          <h2 class="text-2xl font-bold mb-2" style="color: var(--baseng-dark);">
-            Submit Your Pitch
-          </h2>
-          <p style="color: var(--baseng-muted);">
-            Tell us about your startup and vision. We review all submissions carefully.
-          </p>
-        </div>
-
-        <form class="space-y-6">
-
-          <div class="grid md:grid-cols-2 gap-5">
-            <input class="form-input" placeholder="Founder Name *">
-            <input class="form-input" placeholder="Company Name *">
-          </div>
-
-          <div class="grid md:grid-cols-2 gap-5">
-            <input class="form-input" placeholder="Email Address *">
-            <input class="form-input" placeholder="Phone Number">
-          </div>
-
-          <div class="grid md:grid-cols-2 gap-5">
-            <input class="form-input" placeholder="Sector *">
-            <input class="form-input" placeholder="Stage *">
-          </div>
-
-          <input class="form-input" placeholder="Company Website">
-
-          <textarea class="form-textarea" placeholder="Describe your startup, product, traction and team *"></textarea>
-
-          <input class="form-input" placeholder="Pitch Deck URL">
-
-          <button
-            class="w-full py-3 rounded-xl font-medium text-white flex items-center justify-center gap-2"
-            style="background-color: var(--baseng-primary);">
-            Submit Pitch <i class="bi bi-arrow-right"></i>
-          </button>
-        </form>
-      </div>
+    <div class="max-w-4xl mx-auto">
 
       <!-- ================= LOCATION ================= -->
       <div id="location" class="tab-content hidden space-y-10">
@@ -229,21 +181,9 @@
               <div>
                 <h4 class="font-semibold mb-1" style="color: var(--baseng-dark);">Address</h4>
                 <p class="text-sm" style="color: var(--baseng-muted);">
-                  BaseNG Ventures<br>
-                  Victoria Island<br>
-                  Lagos, Nigeria
-                </p>
-              </div>
-            </div>
-
-            <div class="flex gap-4">
-              <div class="icon-box">
-                <i class="bi bi-clock"></i>
-              </div>
-              <div>
-                <h4 class="font-semibold mb-1" style="color: var(--baseng-dark);">Office Hours</h4>
-                <p class="text-sm" style="color: var(--baseng-muted);">
-                  Mon – Fri: 9:00 AM – 6:00 PM
+                  Ground floor, Suite 1,block A,<br>
+                  Alausa Shopping mall, Opp radio bus stop.
+                  Ikeja, Lagos, Nigeria
                 </p>
               </div>
             </div>
@@ -256,50 +196,28 @@
                 <h4 class="font-semibold mb-1" style="color: var(--baseng-dark);">Contact</h4>
                 <p class="text-sm" style="color: var(--baseng-muted);">
                   08029407494, 08034167723<br>
-                  pitch@baseng.com
+                  info@basengtech.com
                 </p>
               </div>
             </div>
 
           </div>
 
-          <div class="bg-gray-100 rounded-lg overflow-hidden h-56 md:h-auto">
+          <div class="bg-gray-100 rounded-lg overflow-hidden h-70 md:h-auto">
+            <div class="w-full min-h-[224px] overflow-hidden rounded-xl">
   <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.3366890123456!2d3.3515!3d6.6018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b922c0c2e6d7b%3A0x2e3c7f6d8a9b1c2d!2sAlausa%20Shopping%20Mall!5e0!3m2!1sen!2sng!4v1234567890"
     class="w-full h-full min-h-[224px] border-0"
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.7286354706444!2d3.4196!3d6.4281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMjUnNDEuMiJOIDPCsDI1JzEwLjYiRQ!5e0!3m2!1sen!2sng!4v1234567890"
+    allowfullscreen
     loading="lazy"
     referrerpolicy="no-referrer-when-downgrade"
-    allowfullscreen
-    title="BaseNG Office Location">
-  </iframe>
+    title="BaseNG Office Location"
+  ></iframe>
+</div>
+
 </div>
 
 
-        </div>
-
-        <!-- Request Visit -->
-        <div class="bg-white border rounded-2xl p-8 md:p-10 shadow-sm">
-          <h3 class="text-lg font-semibold mb-6" style="color: var(--baseng-dark);">
-            Request a Visit
-          </h3>
-
-          <form class="space-y-6">
-            <div class="grid md:grid-cols-2 gap-5">
-              <input class="form-input" placeholder="Your Name *">
-              <input class="form-input" placeholder="Email Address *">
-            </div>
-
-            <div class="grid md:grid-cols-2 gap-5">
-              <input type="date" class="form-input">
-              <input class="form-input" placeholder="Purpose of Visit *">
-            </div>
-
-            <button
-              class="px-6 py-3 rounded-xl text-white font-medium"
-              style="background-color: var(--baseng-primary);">
-              Request Visit
-            </button>
-          </form>
         </div>
       </div>
 
@@ -338,272 +256,6 @@
   </div>
 </section>
 
-
-<section id="focus" class="bg-[#f6fbfe] py-20 overflow-hidden">
-  <div class="max-w-6xl mx-auto px-6">
-
-    <!-- Section Header -->
-    <div class="text-center max-w-3xl mx-auto mb-20 reveal">
-      <span class="inline-block mb-6 px-5 py-2 rounded-full bg-blue-100 text-blue-500 text-sm font-medium">
-        Investment Focus
-      </span>
-
-      <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
-        Core Areas of <span class="text-blue-600">Focus</span>
-      </h2>
-
-      <p class="text-lg text-gray-500">
-        We strategically invest in technology sectors driving digital transformation and creating lasting impact across Africa and beyond.
-      </p>
-    </div>
-
-    <!-- Cards Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-
-      <!-- Card -->
-      <div class="
-                  group relative bg-white rounded-2xl border border-gray-200 p-6
-                  transition-all duration-300 ease-out
-                  hover:-translate-y-2 hover:border-transparent
-                  h-full reveal">
-
-        <!-- Gradient Glow -->
-        <div class="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100
-                    transition-opacity duration-300 blur-xl
-                    bg-gradient-to-br from-blue-400/30 to-cyan-400/30 -z-10"></div>
-
-        <div class="flex flex-col h-full">
-          <div class="w-14 h-14 flex items-center justify-center rounded-xl bg-blue-500 mb-3">
-            <i class="bi bi-wifi text-white text-2xl"></i>
-          </div>
-
-          <h3 class="text-xl font-semibold text-gray-800 mb-3">
-            Telecommunications
-          </h3>
-
-          <p class="text-gray-500 text-sm leading-relaxed mt-auto">
-            We support innovative telecommunications solutions that enhance connectivity, efficiency, and digital access. Our interests include infrastructure technologies, value-added services, and next-generation communication platforms.
-          </p>
-        </div>
-      </div>
-
-      <!-- Card -->
-      <div class="group relative bg-white rounded-2xl border border-gray-200 p-6
-                  transition-all duration-300 ease-out
-                  hover:-translate-y-2 hover:border-transparent
-                  h-full reveal">
-
-        <div class="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100
-                    transition-opacity duration-300 blur-xl
-                    bg-gradient-to-br from-indigo-400/30 to-blue-500/30 -z-10"></div>
-
-        <div class="flex flex-col h-full">
-          <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-blue-500 mb-3">
-            <i class="bi bi-graph-up-arrow text-white text-2xl"></i>
-          </div>
-
-          <h3 class="text-xl font-semibold text-gray-900 mb-3">
-            Marketing & Growth Technology
-          </h3>
-
-          <p class="text-gray-500 text-sm leading-relaxed mt-auto">
-            We invest in data-driven marketing, customer engagement, and digital growth platforms that enable brands and businesses to scale efficiently and measurably across markets. Our focus is on technologies that deliver actionable insights, optimize performance, and drive sustainable long-term growth.
-          </p>
-        </div>
-      </div>
-
-      <!-- Card -->
-      <div class="group relative bg-white rounded-2xl border border-gray-200 p-6
-                  transition-all duration-300 ease-out
-                  hover:-translate-y-2 hover:border-transparent
-                  h-full reveal">
-
-        <div class="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100
-                    transition-opacity duration-300 blur-xl
-                    bg-gradient-to-br from-purple-500/30 to-pink-500/30 -z-10"></div>
-
-        <div class="flex flex-col h-full">
-          <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-gradient-to-br from-purple-500 to-pink-500 mb-3">
-            <i class="bi bi-controller text-white text-2xl"></i>
-          </div>
-
-          <h3 class="text-xl font-semibold text-gray-800 mb-3">
-            Mobile Gaming & Interactive Media
-          </h3>
-
-          <p class="text-gray-500 text-sm leading-relaxed mt-auto">
-            BaseNG partners with creative studios and technology platforms in mobile gaming and interactive entertainment, supporting scalable products with strong user engagement and global appeal.
-          </p>
-        </div>
-      </div>
-
-      <!-- Card -->
-      <div class="group relative bg-white rounded-2xl border border-gray-200 p-6
-                  transition-all duration-300 ease-out
-                  hover:-translate-y-2 hover:border-transparent
-                  h-full reveal">
-
-        <div class="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100
-                    transition-opacity duration-300 blur-xl
-                    bg-gradient-to-br from-green-400/30 to-emerald-500/30 -z-10"></div>
-
-        <div class="flex flex-col h-full">
-          <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-gradient-to-br from-green-500 to-emerald-500 mb-3">
-            <i class="bi bi-credit-card text-white text-2xl"></i>
-          </div>
-
-          <h3 class="text-xl font-semibold text-gray-900 mb-3">
-            Payment Services & FinTech
-          </h3>
-
-          <p class="text-gray-500 text-sm leading-relaxed mt-auto">
-            We invest in secure, scalable payment and fintech solutions that enable seamless digital transactions, financial inclusion, and trusted digital commerce ecosystems.
-          </p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- WHAT SETS US APART -->
-<section class="py-20 bg-slate-100">
-   <!-- Section Header -->
-    <div class="text-center max-w-3xl mx-auto mb-16 reveal">
-      <span class="inline-block px-4 py-1.5 rounded-full bg-blue-100 text-blue-600 text-sm font-semibold mb-6">
-        Our Difference
-      </span>
-
-      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
-        What Sets Us
-        <span class="bg-blue-600 bg-clip-text text-transparent">
-          Apart
-        </span>
-      </h2>
-
-      <p class="text-lg text-slate-600">
-        We're not just investors—we're partners in building Africa's future.
-      </p>
-    </div>
-  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-
-    <div class="bg-white rounded-xl p-6 shadow hover:-translate-y-1 transition fade-in">
-      <i class="bi bi-rocket-takeoff text-blue-600 text-3xl mb-4"></i>
-      <h4 class="font-bold mb-2">Hands-On Support</h4>
-      <p class="text-slate-600 text-sm">We work side-by-side with founders.</p>
-    </div>
-
-    <div class="bg-white rounded-xl p-6 shadow hover:-translate-y-1 transition fade-in">
-      <i class="bi bi-globe text-blue-600 text-3xl mb-4"></i>
-      <h4 class="font-bold mb-2">Global Network</h4>
-      <p class="text-slate-600 text-sm">Access international markets & capital.</p>
-    </div>
-
-    <div class="bg-white rounded-xl p-6 shadow hover:-translate-y-1 transition fade-in">
-      <i class="bi bi-people text-blue-600 text-3xl mb-4"></i>
-      <h4 class="font-bold mb-2">Founder Community</h4>
-      <p class="text-slate-600 text-sm">A trusted community of operators.</p>
-    </div>
-
-    <div class="bg-white rounded-xl p-6 shadow hover:-translate-y-1 transition fade-in">
-      <i class="bi bi-graph-up-arrow text-blue-600 text-3xl mb-4"></i>
-      <h4 class="font-bold mb-2">Long-Term View</h4>
-      <p class="text-slate-600 text-sm">We invest patiently and strategically.</p>
-    </div>
-  </div>
-</section>
-
-<!-- FAQ -->
-<section id="faq" class="py-24 bg-slate-200">
-  <div class="max-w-6xl mx-auto px-6">
-
-    <!-- Section Header -->
-    <div class="text-center max-w-3xl mx-auto mb-16 reveal">
-      <span class="inline-block px-4 py-1.5 rounded-full bg-blue-100 text-blue-600 text-sm font-semibold mb-6">
-        Got Questions?
-      </span>
-
-      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
-        Frequently Asked
-        <span class="bg-blue-600 bg-clip-text text-transparent">
-          Questions
-        </span>
-      </h2>
-
-      <p class="text-lg text-slate-600">
-        Everything you need to know about partnering with BaseNG.
-      </p>
-    </div>
-
-    <!-- FAQ Accordion -->
-    <div class="max-w-3xl mx-auto space-y-4">
-
-      <!-- FAQ Item -->
-      <div class="accordion-item bg-white rounded-xl border border-slate-200 shadow-sm hover:bg-blue-50 hover:shadow-lg transition-all duration-300">
-        <button
-          class="accordion-trigger w-full flex justify-between items-center text-left text-lg font-medium py-6 px-6 text-gray-900"
-        >
-          What types of companies does BaseNG invest in?
-          <span class="accordion-icon transition-transform duration-300 text-gray-900">+</span>
-        </button>
-        <div class="accordion-content px-6 pb-6 hidden text-gray-600">
-          We focus on early-stage technology companies across Africa, with particular emphasis on fintech, healthtech, agritech, and enterprise software. We look for innovative solutions addressing real market needs with strong founding teams.
-        </div>
-      </div>
-
-      <div class="accordion-item bg-white rounded-xl border border-slate-200 shadow-sm hover:bg-blue-50 hover:shadow-lg transition-all duration-300">
-        <button class="accordion-trigger w-full flex justify-between items-center text-left text-lg font-medium py-6 px-6 text-gray-900">
-          What is your typical investment size?
-          <span class="accordion-icon transition-transform duration-300 text-gray-900">+</span>
-        </button>
-        <div class="accordion-content px-6 pb-6 hidden text-gray-600">
-          Our investments typically range from $100K to $2M for early-stage companies. We also provide follow-on funding for portfolio companies showing strong growth and execution.
-        </div>
-      </div>
-
-      <div class="accordion-item bg-white rounded-xl border border-slate-200 shadow-sm hover:bg-blue-50 hover:shadow-lg transition-all duration-300">
-        <button class="accordion-trigger w-full flex justify-between items-center text-left text-lg font-medium py-6 px-6 text-gray-900">
-          How long does the investment process take?
-          <span class="accordion-icon transition-transform duration-300 text-gray-900">+</span>
-        </button>
-        <div class="accordion-content px-6 pb-6 hidden text-gray-600">
-          Our streamlined process typically takes 4–8 weeks from initial meeting to term sheet. We pride ourselves on being founder-friendly and moving quickly when we see a compelling opportunity.
-        </div>
-      </div>
-
-      <div class="accordion-item bg-white rounded-xl border border-slate-200 shadow-sm hover:bg-blue-50 hover:shadow-lg transition-all duration-300">
-        <button class="accordion-trigger w-full flex justify-between items-center text-left text-lg font-medium py-6 px-6 text-gray-900">
-          What support do you provide beyond capital?
-          <span class="accordion-icon transition-transform duration-300 text-gray-900">+</span>
-        </button>
-        <div class="accordion-content px-6 pb-6 hidden text-gray-600">
-          We offer hands-on operational support, access to our global network of mentors and partners, go-to-market assistance, talent acquisition support, and help with subsequent fundraising rounds.
-        </div>
-      </div>
-
-      <div class="accordion-item bg-white rounded-xl border border-slate-200 shadow-sm hover:bg-blue-50 hover:shadow-lg transition-all duration-300">
-        <button class="accordion-trigger w-full flex justify-between items-center text-left text-lg font-medium py-6 px-6 text-gray-900">
-          Do you invest in companies outside Africa?
-          <span class="accordion-icon transition-transform duration-300 text-gray-900">+</span>
-        </button>
-        <div class="accordion-content px-6 pb-6 hidden text-gray-600">
-          While our primary focus is Africa, we also consider companies globally that are building solutions for African markets or have significant operations on the continent.
-        </div>
-      </div>
-
-      <div class="accordion-item bg-white rounded-xl border border-slate-200 shadow-sm hover:bg-blue-50 hover:shadow-lg transition-all duration-300">
-        <button class="accordion-trigger w-full flex justify-between items-center text-left text-lg font-medium py-6 px-6 text-gray-900">
-          How can I pitch my startup to BaseNG?
-          <span class="accordion-icon transition-transform duration-300 text-gray-900">+</span>
-        </button>
-        <div class="accordion-content px-6 pb-6 hidden text-gray-600">
-          You can submit your pitch through our Partnership page. We review all submissions and aim to respond within 2 weeks. Include your pitch deck, key metrics, and a brief overview of your team and vision.
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
 
 <section
   id="cta"
@@ -662,12 +314,8 @@
 
               <div class="flex flex-col gap-3">
                 <div class="flex items-center gap-3 text-slate-600">
-                  <i class="bi bi-envelope"></i>
-                  <span>invest@basengtech.com</span>
-                </div>
-                <div class="flex items-center gap-3 text-slate-600">
                   <i class="bi bi-geo-alt"></i>
-                  <span>Lagos, Nigeria</span>
+                  <span>Ground floor, Suite 1,block A, Alausa Shopping mall, Opp radio bus stop. Ikeja.</span>
                 </div>
               </div>
             </div>

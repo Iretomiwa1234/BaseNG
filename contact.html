@@ -154,38 +154,35 @@
   <div class="max-w-5xl mx-auto px-6">
 
     <!-- ================= TABS NAV ================= -->
-     <div class="flex flex-wrap justify-center gap-3 mb-14">
-  <button class="tab-btn px-6 py-3 rounded-xl text-sm font-medium flex items-center gap-2 border"
-          data-tab="location">
-    <i class="bi bi-geo-alt"></i> Visit Us
-  </button>
+    <div class="flex flex-wrap justify-center gap-3 mb-14">
+      <button class="tab-btn px-6 py-3 rounded-xl text-sm font-medium flex items-center gap-2 border active"
+              data-tab="location">
+        <i class="bi bi-geo-alt"></i> Visit Us
+      </button>
 
-  <button class="tab-btn px-6 py-3 rounded-xl text-sm font-medium flex items-center gap-2 border"
-          data-tab="mail">
-    <i class="bi bi-envelope"></i> Contact
-  </button>
-</div>
+      <button class="tab-btn px-6 py-3 rounded-xl text-sm font-medium flex items-center gap-2 border"
+              data-tab="mail">
+        <i class="bi bi-envelope"></i> Contact
+      </button>
+    </div>
 
     <!-- ================= TAB CONTENT ================= -->
     <div class="max-w-4xl mx-auto">
 
       <!-- ================= LOCATION ================= -->
-      <div id="location" class="tab-content hidden space-y-10">
-
-        <!-- Office Info -->
+      <div id="location" class="tab-content space-y-10">
         <div class="bg-white border rounded-2xl p-8 md:p-10 grid md:grid-cols-2 gap-8 shadow-sm">
 
           <div class="space-y-6">
-
             <div class="flex gap-4">
               <div class="icon-box">
-                <i class="bi bi-building"></i>
+                <i class="bi bi-building text-2xl text-blue-600"></i>
               </div>
               <div>
                 <h4 class="font-semibold mb-1" style="color: var(--baseng-dark);">Address</h4>
                 <p class="text-sm" style="color: var(--baseng-muted);">
-                  Ground floor, Suite 1,block A,<br>
-                  Alausa Shopping mall, Opp radio bus stop.
+                  Ground floor, Suite 1, Block A,<br>
+                  Alausa Shopping Mall, Opp Radio Bus Stop,<br>
                   Ikeja, Lagos, Nigeria
                 </p>
               </div>
@@ -193,7 +190,7 @@
 
             <div class="flex gap-4">
               <div class="icon-box">
-                <i class="bi bi-telephone"></i>
+                <i class="bi bi-telephone text-2xl text-blue-600"></i>
               </div>
               <div>
                 <h4 class="font-semibold mb-1" style="color: var(--baseng-dark);">Contact</h4>
@@ -203,23 +200,20 @@
                 </p>
               </div>
             </div>
-
           </div>
 
           <div class="bg-gray-100 rounded-lg overflow-hidden h-70 md:h-auto">
             <div class="w-full min-h-[224px] overflow-hidden rounded-xl">
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.3366890123456!2d3.3515!3d6.6018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b922c0c2e6d7b%3A0x2e3c7f6d8a9b1c2d!2sAlausa%20Shopping%20Mall!5e0!3m2!1sen!2sng!4v1234567890"
-    class="w-full h-full min-h-[224px] border-0"
-    allowfullscreen
-    loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade"
-    title="BaseNG Office Location"
-  ></iframe>
-</div>
-
-</div>
-
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.3366890123456!2d3.3515!3d6.6018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b922c0c2e6d7b%3A0x2e3c7f6d8a9b1c2d!2sAlausa%20Shopping%20Mall!5e0!3m2!1sen!2sng!4v1234567890"
+                class="w-full h-full min-h-[224px] border-0"
+                allowfullscreen
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="BaseNG Office Location"
+              ></iframe>
+            </div>
+          </div>
 
         </div>
       </div>
@@ -236,23 +230,28 @@
           </p>
         </div>
 
-        <form class="space-y-6">
+        <form class="space-y-6" action="https://formsubmit.co/info@basengtech.com" method="POST" id="contactForm">
+  <div class="grid md:grid-cols-2 gap-5">
+    <input class="form-input border rounded-lg p-3 w-full" name="name" placeholder="Your Name *" required>
+    <input class="form-input border rounded-lg p-3 w-full" type="email" name="email" placeholder="Email Address *" required>
+  </div>
 
-          <div class="grid md:grid-cols-2 gap-5">
-            <input class="form-input" placeholder="Your Name *">
-            <input class="form-input" placeholder="Email Address *">
-          </div>
+  <input class="form-input border rounded-lg p-3 w-full" name="brand" placeholder="Brand Name *" required>
+  <input class="form-input border rounded-lg p-3 w-full" name="subject" placeholder="Subject *" required>
+  <textarea class="form-textarea border rounded-lg p-3 w-full" name="message" placeholder="Write your message here *" required></textarea>
 
-          <input class="form-input" placeholder="Subject *">
+  <!-- Optional: add hidden input for FormSubmit redirect -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you">
 
-          <textarea class="form-textarea" placeholder="Write your message here *"></textarea>
+  <button
+    type="submit"
+    class="w-full py-3 rounded-xl font-medium text-white flex items-center justify-center gap-2"
+    style="background-color: var(--baseng-primary);">
+    Send Message <i class="bi bi-send"></i>
+  </button>
+</form>
 
-          <button
-            class="w-full py-3 rounded-xl font-medium text-white flex items-center justify-center gap-2"
-            style="background-color: var(--baseng-primary);">
-            Send Message <i class="bi bi-send"></i>
-          </button>
-        </form>
       </div>
 
     </div>
@@ -473,6 +472,7 @@
   </div>
 </footer>
 <script src="script.js"></script>
+<script src="message.js"></script>
 
 </body>
 </html>

@@ -184,3 +184,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+if (window.location.pathname.endsWith(".html")) {
+    const cleanURL = window.location.pathname.replace(".html", "");
+    history.replaceState(null, "", cleanURL);
+  }

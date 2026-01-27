@@ -45,82 +45,77 @@
 <body class="min-h-screen bg-[var(--baseng-soft)] text-[var(--baseng-dark)]">
 
 <header
-  id="site-header"
-  class="fixed top-0 left-0 w-full z-40 transition-all duration-300 bg-transparent py-3">
-  <div class="max-w-6xl mx-auto px-6 flex items-center justify-between">
+      id="site-header"
+      class="fixed top-0 left-0 w-full z-40 transition-all duration-300 bg-transparent py-3">
+      <div class="max-w-6xl mx-auto px-6 flex items-center justify-between">
 
-    <!-- Logo -->
-    <a href="index.html">
-      <img 
-        id=""
-        src="images/logo1.png"
-        alt="BaseNG"
-        class="h-9 transition-all duration-300"
-      >
-    </a>
+        <!-- Logo -->
+        <a href="index.html">
+          <img
+            id
+            src="images/logo1.png"
+            alt="BaseNG"
+            class="h-9 transition-all duration-300">
+        </a>
 
+        <!-- Desktop Nav -->
+        <nav
+          id="site-nav"
+          class="hidden md:flex gap-12 text-sm font-medium text-slate/80 transition-colors duration-300">
+          <a href="about.html" class="hover:text-blue-600">About</a>
+          <a href="focus.html" class="hover:text-blue-600">Focus Areas</a>
+          <a href="approach.html" class="hover:text-blue-600">Our
+            Approach</a>
+          <a href="value.html" class="hover:text-blue-600">Values</a>
+          <a href="contact.html" class="hover:text-blue-600">Contact-Us</a>
+        </nav>
 
-    <!-- Desktop Nav -->
-    <nav
-      id="site-nav"
-      class="hidden md:flex gap-12 text-sm font-medium text-slate/80 transition-colors duration-300"
-    >
+        <!-- Desktop CTA -->
+        <a
+          href="https://form.jotform.com/260204554638557" target="_blank"
+          rel="noopener"
+          class="hidden md:inline-flex px-5 py-2 rounded-xl  bg-blue-600 text-white font-semibold transition-all duration-300">
+          Submit Your Pitch
+        </a>
+
+        <!-- Mobile Button -->
+        <button
+          id="menu-btn"
+          class="md:hidden flex flex-col gap-1.5 z-50"
+          aria-label="Toggle Menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- ================= MOBILE MENU ================= -->
+    <div
+      id="mobile-menu"
+      class="fixed inset-0 bg-white text-slate-700 hidden flex flex-col justify-center gap-8 text-xl font-medium z-30 px-12">
+
+      <!-- Close Button -->
+      <button
+        id="close-menu-btn"
+        aria-label="Close menu"
+        class="absolute top-6 right-6 text-3xl font-light text-blue-700 hover:text-blue-600 transition">
+        &times;
+      </button>
+
       <a href="about.html" class="hover:text-blue-600">About</a>
-      <a href="index.html#focus" class="hover:text-blue-600">Focus Areas</a>
-      <a href="index.html#approach" class="hover:text-blue-600">Our Approach</a>
-      <a href="index.html#values" class="hover:text-blue-600">Values</a>
+      <a href="focus.html" class="hover:text-blue-600">Focus Areas</a>
+      <a href="approach.html" class="hover:text-blue-600">Our Approach</a>
+      <a href="value.html" class="hover:text-blue-600">Values</a>
       <a href="contact.html" class="hover:text-blue-600">Contact-Us</a>
-    </nav>
 
-    <!-- Desktop CTA -->
-    <a
-      href="https://form.jotform.com/260204554638557" target="_blank" rel="noopener"
-      class="hidden md:inline-flex px-5 py-2 rounded-xl  bg-blue-600 text-white font-semibold transition-all duration-300"
-    >
-      Submit Your Pitch
-    </a>
-
-    <!-- Mobile Button -->
-    <button
-      id="menu-btn"
-      class="md:hidden flex flex-col gap-1.5 z-50"
-      aria-label="Toggle Menu"
-    >
-      <span class="hamburger-line"></span>
-      <span class="hamburger-line"></span>
-      <span class="hamburger-line"></span>
-    </button>
-  </div>
-</header>
-
-<!-- ================= MOBILE MENU ================= -->
-<div
-  id="mobile-menu"
-  class="fixed inset-0 bg-white text-slate-700 hidden flex flex-col justify-center gap-8 text-xl font-medium z-30 px-12"
->
-
-  <!-- Close Button -->
-  <button
-    id="close-menu-btn"
-    aria-label="Close menu"
-    class="absolute top-6 right-6 text-3xl font-light text-blue-700 hover:text-blue-600 transition"
-  >
-    &times;
-  </button>
-
-  <a href="about.html" class="hover:text-blue-600">About</a>
-  <a href="index.html#focus" class="hover:text-blue-600">Focus Areas</a>
-  <a href="index.html#approach" class="hover:text-blue-600">Our Approach</a>
-  <a href="index.html#values" class="hover:text-blue-600">Values</a>
-  <a href="contact.html" class="hover:text-blue-600">Contact-Us</a>
-
-  <a
-    href="https://form.jotform.com/260204554638557" target="_blank" rel="noopener"
-    class="mt-6 px-8 py-4 rounded-xl bg-blue-600 text-white text-lg"
-  >
-    Submit Your Pitch
-  </a>
-</div>
+      <a
+        href="https://form.jotform.com/260204554638557" target="_blank"
+        rel="noopener"
+        class="mt-6 px-8 py-4 rounded-xl bg-blue-600 text-white text-lg">
+        Submit Your Pitch
+      </a>
+    </div>
 
   <!-- Main Content -->
 <main class="pt-32 pb-20">
@@ -249,7 +244,7 @@
             <div class="bg-white border rounded-lg p-6">
               <p class="font-semibold mb-2">BaseNG Technology</p>
               <p class="text-[var(--baseng-muted)]">Email: info@basengtech.com</p>
-              <p class="text-[var(--baseng-muted)]">Website: www.basengtech.com</p>
+              <p class="text-[var(--baseng-muted)]">Website: https://basengtech.com</p>
             </div>
           </section>
 
@@ -303,22 +298,22 @@
         <h4 class="font-semibold text-lg mb-4">Company</h4>
         <ul class="space-y-3">
           <li>
-            <a href="index.html#about" class="text-white/70 hover:text-blue-400 transition-colors">
+            <a href="about.html" class="text-white/70 hover:text-blue-400 transition-colors">
               About
             </a>
           </li>
           <li>
-            <a href="index.html#focus" class="text-white/70 hover:text-blue-400 transition-colors">
+            <a href="focus.html" class="text-white/70 hover:text-blue-400 transition-colors">
               Focus Areas
             </a>
           </li>
           <li>
-            <a href="index.html#approach" class="text-white/70 hover:text-blue-400 transition-colors">
+            <a href="approach.html" class="text-white/70 hover:text-blue-400 transition-colors">
               Our Approach
             </a>
           </li>
           <li>
-            <a href="index.html#values" class="text-white/70 hover:text-blue-400 transition-colors">
+            <a href="value.html" class="text-white/70 hover:text-blue-400 transition-colors">
               Values
             </a>
           </li>
@@ -340,12 +335,12 @@
             </a>
           </li>
           <li>
-            <a href="contact.html?tab=location" class="text-white/70 hover:text-blue-400 transition-colors">
+            <a href="contact.html" class="text-white/70 hover:text-blue-400 transition-colors">
               Send Mail
             </a>
           </li>
           <li>
-            <a href="contact.html?tab=location" class="text-white/70 hover:text-blue-400 transition-colors">
+            <a href="contact.html" class="text-white/70 hover:text-blue-400 transition-colors">
               Visit Our Office
             </a>
           </li>
